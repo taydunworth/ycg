@@ -1,0 +1,60 @@
+body {
+  font-family: 'Archivo', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #272727;
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+  font-size: 1em;
+}
+
+main, .container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.logo-box {
+  text-align: center;
+  padding: 60px;
+  margin-top: 30px;
+}
+
+#ycg-logo {
+  width: 50%;
+}
+
+.social-box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.social-box button {
+  background-color: #000;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all .4s ease-in-out;
+}
+
+.social-box button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  transition: all .4s ease-in-out;
+}
+
+.social-box button:hover {
+  background-color: #fff;
+}
+
+.social-box button a:hover {
+  color: #000;
+}

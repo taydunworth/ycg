@@ -1,0 +1,19 @@
+$dkgrey: #272727;
+
+body {
+  font-family: 'Archivo,' Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dkgrey;
+}
+
+p {
+  font-size: 1em;
+}
+
+main {
+  width: 90%;
+  .container {
+    margin: 0px auto;
+  }
+}
