@@ -4,6 +4,7 @@
 ```
 npm install
 ```
+
 ```
 npm run start
 ```
@@ -12,8 +13,6 @@ To Deploy
 ```
 npm run build
 ```
-
-Is there anything difficult that needs explaining?
 
 ## Features
 - Image compression
