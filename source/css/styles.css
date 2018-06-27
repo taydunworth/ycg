@@ -1,11 +1,17 @@
 body {
-  font-family: 'Archivo', Arial, sans-serif;
+  font-family: 'DIN Condensed', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #272727;
-  background: #8e9eab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  background: #373b6d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #307cf3, #373b6d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #307cf3, #373b6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  line-height: 1em;
 }
 
 p {
@@ -19,12 +25,12 @@ main, .container {
 
 .logo-box {
   text-align: center;
-  padding: 60px;
+  padding: 40px;
   margin-top: 30px;
 }
 
 #ycg-logo {
-  width: 50%;
+  width: 60%;
 }
 
 .social-box {
@@ -34,27 +40,39 @@ main, .container {
   margin: 0px auto;
 }
 
-.social-box button {
-  background-color: #000;
-  border: 0;
-  padding: 10px 15px;
-  border-radius: 4px;
-  transition: all .4s ease-in-out;
-}
-
-.social-box button a {
+.social-icon a {
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1em;
-  transition: all .4s ease-in-out;
+  font-size: 2em;
 }
 
-.social-box button:hover {
-  background-color: #fff;
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-.social-box button a:hover {
-  color: #000;
+@media (max-width: 800px) {
+  #ycg-logo {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #ycg-logo {
+    width: 100%;
+  }
+  .social-box {
+    width: 100%;
+  }
 }
